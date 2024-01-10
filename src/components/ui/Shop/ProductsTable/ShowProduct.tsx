@@ -77,7 +77,7 @@ const ShowProduct = ({ open, onClose, product }) => {
                     Price: {product.price}
                   </Typography>
                 </Box>
-                <Box py={2} mx={2} width="60%">
+                <Box py={2} mx={2} width={isMobile ? "100%" : "60%"}>
                   <Typography gutterBottom pb={2}>
                     توضیحات:
                     <br />

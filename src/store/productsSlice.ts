@@ -185,7 +185,7 @@ export const selectProductsRateAvg = (state: RootState) => {
 
 export const selectSumProducts = (state: RootState) => {
   const products = [...state.products.entities];
-  return products.reduce((total, next) => total + next?.price || 0, 0);
+  return products.reduce((total, next) => total + +next?.price || 0, 0);
 };
 
 export const selectProducts = (state: RootState) => state.products.entities;
